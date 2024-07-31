@@ -2,8 +2,6 @@ import 'package:bloc_clean_architechture/features/counter/presentation/bloc/coun
 import 'package:bloc_clean_architechture/features/user_auth/presentation/bloc/auth_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
-import 'features/counter/presentation/screen/counter_home_screen.dart';
 import 'features/nav_controller/presentation/bloc/navigate_bloc.dart';
 import 'features/user_auth/presentation/screens/user_auth_screen.dart';
 

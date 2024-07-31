@@ -5,9 +5,11 @@ import 'package:bloc_clean_architechture/features/user_auth/presentation/bloc/au
 import 'package:bloc_clean_architechture/features/user_auth/presentation/bloc/auth_event.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../flutter_stream/presentation/sereens/StreamUi.dart';
 import '../../../counter/presentation/screen/counter_home_screen.dart';
 import '../../../todoey/presentation/screens/todoey_home_screen.dart';
 import '../../../user_auth/presentation/screens/user_welcom_screen.dart';
+
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -46,7 +48,8 @@ class HomeScreen extends StatelessWidget {
                 ? [
                     const UserWelcomeScreen(),
                     const CounterHomeScreen(),
-                    const TodoeyHomeScreen()
+                    const TodoeyHomeScreen(),
+                     StreamUi(),
                   ][state.index]
                 : Container(),
             bottomNavigationBar: BottomNavigationBar(
@@ -70,6 +73,12 @@ class HomeScreen extends StatelessWidget {
                 ),
                 BottomNavigationBarItem(
                   label: "Task Add",
+                  icon: Icon(
+                    Icons.add_task,
+                  ),
+                ),
+                BottomNavigationBarItem(
+                  label: "Stream Ui",
                   icon: Icon(
                     Icons.add_task,
                   ),
